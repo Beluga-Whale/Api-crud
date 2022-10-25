@@ -2,18 +2,18 @@ const express = require('express');
 const router = express.Router()
 const {
     listStudents,
-    createlistStudent,
-    editlistStudent,
-    deletelistStudent
+    createStudent,
+    editStudent,
+    deleteStudent
 } = require('../controllers/studentController')
 
 router.get('/', listStudents)
 
-router.post('/create-student', createlistStudent)
+router.post('/create-student', createStudent)
 
-router.put('/edit-student/:id', editlistStudent)
+router.put('/edit-student/:id', editStudent)
 
-router.delete('/delete-student/:id', deletelistStudent)
+router.delete('/delete-student/:id', deleteStudent)
 
 
 
